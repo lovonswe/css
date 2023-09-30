@@ -1,0 +1,104 @@
+.container {
+    border: 1px solid red;
+    background: linear-gradient( 217deg, transparent, rgb(9, 9, 9), blue),linear-gradient( 217deg, transparent, rgb(9, 9, 9)),linear-gradient( 217deg, transparent, rgb(9, 9, 9));
+    color: gray;
+}
+
+.rainbow {
+    border: 1px solid black;
+    height: 200px;
+    background: linear-gradient(
+        to top left,
+        red 20%,
+        orange 20% 40%,
+        yellow 60%,
+        green 60% 70%,
+        blue
+
+    );
+}
+
+.stripe-container {
+    border: 10px solid black;
+    display: flex;
+    overflow: scroll;
+}
+
+.stripe {
+   /* // border: 2px solid black; */
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(
+        to top right,
+        red 50%,
+        orange 50%
+    );
+}
+
+.stripe-back {
+    /* // border: 2px solid black; */
+     height: 200px;
+     width: 200px;
+     background: linear-gradient(
+         to bottom right,
+         orange 10% 50%,
+         red 50% 
+     );
+ }
+
+ .flag {
+        /* global 94%+ browsers support */
+        background: radial-gradient(circle at 50% 50%, rgba(238, 130, 238, 1) 10%, rgba(0, 209, 255, 1)10% 100%);
+        height: 200px;
+        border: 1px solid black;
+ }
+ .ellipse{
+    background: radial-gradient(ellipse at 50% 50%, rgba(238, 130, 238, 1) 10%, rgba(0, 209, 255, 1)10% 100%);
+    height: 200px;
+        border: 1px solid black;
+ }
+
+ .conic {
+    background: conic-gradient(from 90deg at 50% 50%, rgba(238, 130, 238, 0.49) 10%, rgba(0, 209, 255, 1)10% 40%, red 40% 70%, black 70% 100%);
+    height: 200px;
+    border: 1px solid black;
+
+ }
+
+ .cover-pic {
+    /* The image used */
+    background-image: url("");
+    
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .profile-info {
+    /*background-color: rgb(0,0,0); /* Fallback color */
+    background: linear-gradient(to top, white, transparent);
+    filter: blur(5px);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    &:hover{
+        filter: blur(0);
+    }
+  }
